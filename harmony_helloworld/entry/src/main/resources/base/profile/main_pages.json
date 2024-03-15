@@ -1,0 +1,19 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Second",
+    "pages/Basic",
+    "pages/Fourth",
+    "pages/ListItem",
+    "pages/PropPages",
+    "pages/AnimationPage",
+    "pages/LifeCiclePage",
+    "pages/TestPage1",
+    "pages/TestPage2",
+    "pages/DocumentListPage",
+    "pages/DocumentPage",
+    "pages/ShopPage",
+    "pages/TaskManagePage",
+    "pages/NotificationPage"
+  ]
+}

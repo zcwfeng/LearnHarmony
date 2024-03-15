@@ -1,0 +1,55 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "srcEntry": './ets/myabilitystage/MyAbilityStage.ts',
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "tv"
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "launchType": "singleton",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "DocumentAbility",
+        "srcEntry": "./ets/documentability/DocumentAbility.ts",
+        "description": "$string:DocumentAbility_desc",
+        "icon": "$media:icon",
+        "launchType": "specified",
+        "label": "$string:DocumentAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ]
+  }
+}
